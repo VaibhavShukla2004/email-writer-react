@@ -21,7 +21,7 @@ function App() {
     setGeneratedReply('');
 
     try {
-      const response = await axios.post("http://localhost:8080/api/email/generate", {
+      const response = await axios.post("https://email-writer-production-5924.up.railway.app/api/email/generate", {
         emailContent,
         tone
       });
